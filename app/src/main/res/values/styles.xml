@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <style name="NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+
+    <!---->
+    <style name="home_img_icon" >
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <!---->
+    <style name="home_text_icon" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!---->
+    <style name="home_img_center_icon">
+        <item name="android:layout_width">43dp</item>
+        <item name="android:layout_height">43dp</item>
+
+    </style>
+
+    <style name="toolBarTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="toolBarStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="TextAppearance.ExpandedTitle"
+           parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+
+    <style name="my_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="my_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="my_text_17">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="my_text_16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="my_text_12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="my_text_10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="title" parent="my_text_17">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+
+    <style name="my_wrap_content2" parent="my_wrap_content">
+
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+
+
+</resources>

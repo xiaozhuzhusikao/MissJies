@@ -1,0 +1,1 @@
+include ':app', ':ParticleView', ':library', ':utils-v4', ':PagerSlidingLibrary'

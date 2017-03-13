@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:hehe="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--侧滑-->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hehe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--DrawerLayout 分为两部分 一部分是 菜单区域 一般是主界面区域-->
+
+    <!--内容区域-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--上面是一些图片,包括logo啥的-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_theme">
+
+            <ImageView
+                android:id="@+id/myshop"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:clickable="true"
+                android:src="@drawable/myshop"/>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="败家姐"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"/>
+
+            <ImageView
+                android:id="@+id/shopcar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:src="@drawable/shopcar"/>
+
+        </RelativeLayout>
+
+        <!--中间是可以滑动的标题-->
+        <com.astuetz.PagerSlidingTabStripCopy
+            android:id="@+id/main_pagersliding"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            hehe:pstsTextViewSelectedColor="#FC435B"
+            hehe:pstsTextViewSelectedSize="5sp"/>
+        <!--hehe:pstsIndicatorColor="#FC435B"-->
+
+        <!--最后是一个可以翻页的ViewPager-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!--左菜单-->
+    <FrameLayout
+        android:id="@+id/slidemenu"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#F56776"
+        android:clickable="true">
+
+        <include
+            android:id="@+id/bottom_bar"
+            layout="@layout/slide_menu"/>
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+    <!--</RelativeLayout>-->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myapp="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="10dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.m520it.missjie.home.view.innerfragment.recommend.customview.CircleImageView
+            android:id="@+id/user_icon_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="14dp"
+            android:src="@mipmap/ic_launcher"
+            myapp:border_color="@color/colorAccent"
+            myapp:border_width="1dp"/>
+
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/user_icon_iv"
+            android:text="hahahha"
+            android:textColor="#f00"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/user_icon_iv"
+            android:text="2017"
+            android:textSize="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/video_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="我是TEXT"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/custom_videoplayer_standard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/up_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/commend_up"
+            android:gravity="center"
+            android:text="haha"/>
+
+        <TextView
+            android:id="@+id/down_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/commend_down"
+            android:gravity="center"
+            android:text="haha"/>
+
+        <TextView
+            android:id="@+id/share_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/commend_forward_normal_x"
+            android:gravity="center"
+            android:text="haha"/>
+
+        <TextView
+            android:id="@+id/commend_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/commend"
+            android:gravity="center"
+            android:text="haha"/>
+    </LinearLayout>
+
+</LinearLayout>

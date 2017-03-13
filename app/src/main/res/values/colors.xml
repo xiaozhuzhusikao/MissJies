@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FC435B</color>
+    <color name="colorTab">#000000</color>
+
+    <color name="colorTittle">#FFFFFFFF</color>
+    <color name="itemFontColor">#000000</color>
+    <color name="primary_text">@android:color/darker_gray</color>
+
+    <color name="touming">@android:color/transparent</color>
+
+
+    <color name="black_bg">#d0000000</color>
+
+
+    <color name="choose_jd_service_nor">#232326</color>
+    <color name="choose_jd_service_selected">#F33F3F</color>
+
+
+
+
+</resources>

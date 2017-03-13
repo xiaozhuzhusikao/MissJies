@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--上面是一些图片,包括logo啥的-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_theme">
+
+        <ImageView
+            android:id="@+id/cup"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/top_cup_selector"/>
+
+        <ImageView
+            android:id="@+id/mid"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:src="@drawable/top_mid"/>
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/mid"
+            android:src="@drawable/top_refresh"/>
+
+        <ImageView
+            android:id="@+id/suiji"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/top_suiji_selector"/>
+
+    </RelativeLayout>
+
+
+    <!--app:stl_defaultTabBackground="@drawable/bg_theme"-->
+
+    <!--中间是可以滑动的标题-->
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/viewpagertab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:stl_defaultTabBackground="@color/colorAccent"
+        app:stl_defaultTabTextColor="#ffffff"
+        app:stl_defaultTabTextHorizontalPadding="18dp"
+        app:stl_defaultTabTextSize="16sp"
+        app:stl_dividerThickness="0dp"
+        app:stl_indicatorColor="@color/colorAccent"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="2dp"
+        app:stl_underlineThickness="10dp"
+        />
+    <!--最后是一个可以翻页的ViewPager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
